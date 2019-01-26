@@ -13,26 +13,8 @@
 **Setup**
 
 Run `npm install` in project's root directory
-Run `npm install --prefix app` in project's root directory
 
-Create `config.js` file in project's root directory
-
-Example of `config.js`
-
-```
-module.exports = {
-    httpPort: 15000,
-    connectionString: 'mongodb://localhost/Scoreboard',
-};
-```
-
-**Development workflow**
-
-Run `npm run dev` in project's root directory
-
-When in development, backend listens on hardcoded HTTP port `15000`. 
-If it needs to be changed, please do not forget to change it in `app/package.json`
-under key `proxy` and do not commit those changes.
+Then use `cd app` and `npm install ` in project's root directory
 
 **Production build**
 
