@@ -1,0 +1,80 @@
+@onlyMobile:		~'only screen and (max-width: 767px)';
+@mobileAndTablet:	~'only screen and (max-width: 1023px)';
+@onlyTablet:		~'only screen and (min-width: 768px) and (max-width: 1023px)';
+@tablet:			~'only screen and (min-width: 768px)';
+@desktop:			~'only screen and (min-width: 1024px)';
+@smallDesktop:		~'only screen and (min-width: 1024px) and (max-width: 1280px)';
+
+/* ------------------------------------ *\
+	#STYLEGUIDES
+\* ------------------------------------ */
+:focus {
+	outline: none;
+}
+
+
+.btn {
+	&:focus,
+	&:active:focus,
+	&.active:focus,
+	&.focus,
+	&:active.focus,
+	&.active.focus {
+		outline: none;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+	border: 0;
+	box-shadow: none;
+}
+
+button {
+	cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background: #5c5c5c;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow: 0 0 2px #a8a8a8, 0 0 20px #ececec;
+}
+
+input {
+	cursor: pointer;
+	margin-right: 10px;
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    box-shadow: 0 0 2px #cdcdcd, 0 0 20px #ececec;
+	border-radius: 3px;
+	
+	&:active, &:focus {
+		box-shadow: 0 0 2px #000000, 0 0 20px #c8c8c8;
+	}
+}
