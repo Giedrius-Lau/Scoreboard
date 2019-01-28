@@ -19,7 +19,7 @@
 		"winston-logstash": "^0.4.0"
 	},
 	"scripts": {
-		"start": "node server.js",
+		"start": "concurrently --names \"server,app,styles\" --prefix name \"npm run start:watch\" \"npm run --prefix app start\" \"npm run styles:watch\"",
 		"start:watch": "nodemon server.js",
 		"build": "npm run styles && npm run --prefix app build",
 		"dev": "concurrently --names \"server,app,styles\" --prefix name \"npm run start:watch\" \"npm run --prefix app start\" \"npm run styles:watch\"",
@@ -29,12 +29,6 @@
 	"eslintConfig": {
 		"extends": "react-app"
 	},
-	"browserslist": [
-		">0.2%",
-		"not dead",
-		"not ie <= 11",
-		"not op_mini all"
-	],
 	"devDependencies": {
 		"chai": "^4.1.2",
 		"chai-as-promised": "^7.1.1",

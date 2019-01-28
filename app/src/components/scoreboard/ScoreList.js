@@ -5,7 +5,7 @@ class ScoreList extends React.Component {
 		id: ''
 	};
 
-	renderTableRow(players) {
+	renderList(players) {
 		return (
 			<li key={players._id}>
 				<p>{players.name}</p>
@@ -24,7 +24,7 @@ class ScoreList extends React.Component {
 					<button onClick={() => sorting('score')}>Sort by score</button>
 				</div>
 
-				<ul className="score-list">{this.props.players.map(players => this.renderTableRow(players))}</ul>
+				<ul className="score-list">{this.props.players.map(players => this.renderList(players))}</ul>
 				<form className="add-form" onSubmit={this.handleSubmit}>
 					<input
 						required

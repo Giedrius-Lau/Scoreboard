@@ -14,8 +14,8 @@
 
 Run `npm install` in project's root directory
 
-Then use `cd app` and `npm install ` in project's root directory
+Then `cd app` and `npm install ` in project's app directory
 
 **Production build**
 
-* Start project by `npm run dev`
+* Start project by `npm start`
